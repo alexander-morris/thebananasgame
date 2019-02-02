@@ -13,9 +13,11 @@
 <body ng-app="thebananasgame">
 	<div ng-controller="m">
 		<div class="viewContainer">
-			<div ng-repeat="item in stack" style="{{ item.style }}" class="stackCard {{ item.h }}">	
-				<span class="stackItem">{{ item.t }}</span>
-				<span class="stackItem">{{ item.t }}</span>
+			<div ng-repeat="item in stack" style="{{ item.style }}" class="stackCard">	
+				<img src="{{ item.mediaUrl }}">
+				<span class="stackItem title">{{ item.overlayText }}</span>
+				<span class="stackItem subtitle">{{ item.message }}</span>
+
 			</div>
 		</div>
 		<span class="stackNextButton" ng-click="stackNext()"> > </span>
