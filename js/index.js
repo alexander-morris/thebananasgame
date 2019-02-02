@@ -26,6 +26,9 @@ thebananasgame.controller('m', ['$scope', function($scope, $window) {
 		
 		for ( var u = 1; u < stack.length; u++ ) {
 			console.log('u is', u)
+
+			
+
 			if ( u == 1 ) {
 				stack[u].h = ""
 

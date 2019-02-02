@@ -2,10 +2,19 @@
 	display: none;
 }
 
-iframe  {
-	height: 100vh;
-	width: 100vh;
-	z-index: 1vh;
-	position: absolute;
-	
+.stackCard {
+    width: calc(100vw - 2em);
+    height: calc(100vh - 2em);
+    box-shadow: #0000005c 1px 1px 2px 0.5px;
+}
+
+span.stackNextButton {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    z-index: 2;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    border: 0.5px solid #00000040;
 }

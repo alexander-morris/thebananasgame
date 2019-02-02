@@ -13,16 +13,12 @@
 <body ng-app="thebananasgame">
 	<div ng-controller="m">
 		<div class="viewContainer">
-			<div ng-repeat="item in stack" ng-model="stack.model" >
-				<div class="row">
-					<div class="stackCard {{ item.h }}">	
-						<span class="stackItem">{{ item.t }}</span>
-						<span class="stackItem">{{ item.t }}</span>
-						<span ng-click="stackNext()">Next</span>
-					</div>
-				</div>
+			<div ng-repeat="item in stack" style="{{ item.style }}" class="stackCard {{ item.h }}">	
+				<span class="stackItem">{{ item.t }}</span>
+				<span class="stackItem">{{ item.t }}</span>
 			</div>
 		</div>
+		<span class="stackNextButton" ng-click="stackNext()"> > </span>
 	</div>
 
 
